@@ -2557,7 +2557,7 @@ ul.minicart .cart-price .new {
 }
 .latest-match-box .tournament-schedule-content {
 	padding: 41px 30px;
-	background: #1c181e;
+	background: #15161d;
 }
 .latest-match-box .tournament-schedule-content p {
 	font-size: 13px;
@@ -4645,7 +4645,7 @@ ul.minicart .cart-price .new {
 	margin-left: 5px;
 }
 .s-newsletter-area .newsletter-wrap {
-	background-color: #1c181e;
+	background-color: #15161d;
 }
 .s-newsletter-area .newsletter-title h2 {
 	letter-spacing: 0;
@@ -4813,7 +4813,7 @@ ul.minicart .cart-price .new {
 	background: #262228;
 }
 .s-copyright-wrap {
-	background: #161417;
+	background: #15161d;
 }
 .fw-text p {
     font-size: 14px;
@@ -4863,7 +4863,7 @@ ul.minicart .cart-price .new {
 
 /* 27. Preloader */
 #preloader{
-	background-color: #161417;
+	background-color: #15161d;
 	height: 100%;
 	width: 100%;
 	position: fixed;
