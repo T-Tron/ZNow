@@ -14,6 +14,7 @@
     <input type="text" name="surname" placeholder="Nom" required>
     <input type="text" name="username" placeholder="Pseudo" required>
     <input type="text" name="email" placeholder="Email" required>
+    <textarea name="description" cols="30" rows="10" maxlength="500" placeholder="Description" required></textarea>
     <input type="password" name="password" placeholder="Mot De Passe" required>
     <input type="password" name="repeat-password" placeholder="Répeter Le Mot De Passe" required>
     <input type="submit" value="S'inscrire">

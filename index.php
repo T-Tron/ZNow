@@ -1,9 +1,12 @@
+<?php
+    session_start();
+?>
 <!doctype html>
 <html class="no-js" lang="fr">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>ZNow - Acceuil</title>
+        <title>ZNow - Accueil</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -80,7 +83,13 @@
                                                 </ul>
                                             </li>
                                             <li><a href="contact.html">Contact</a></li>
-                                            <li class="show"><a href="connexion.php">Connexion</a></li>
+                                            <?php
+                                            if(!isset($_SESSION['loggedin']) OR $_SESSION['loggedin'] == false) {
+                                            ?>
+                                            <li class="show"><a href="pages/signin/index.php">Connexion</a></li>
+                                            <?php
+                                            }
+                                            ?>
                                         </ul>
                                     </div>
                                     <div class="header-action">
