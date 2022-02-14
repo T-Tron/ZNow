@@ -1,6 +1,9 @@
 <?php
 
 	session_start();
+	if(isset($_SESSION['loggedin']) AND $_SESSION['loggedin'] == true) {
+        header("Location: ../../index.php");
+    }
 
 	if(!isset($_POST['name'], $_POST['surname'], $_POST['username'], $_POST['email'], $_POST['password'], $_POST['repeat-password'], $_SESSION['birthDate'])) {
 		header("Location: index.php?message=Veuillez compléter le formulaire d'inscription.");

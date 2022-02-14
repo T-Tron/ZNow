@@ -1,5 +1,9 @@
 <?php
     session_start();
+    if(isset($_SESSION['loggedin']) AND $_SESSION['loggedin'] == true) {
+        header("Location: ../../index.php");
+    }
+    
     if(!isset($_POST['birthDate'])) {
         header("Location: index.php?message=Veuillez compléter le formulaire d'inscription.");
     }
