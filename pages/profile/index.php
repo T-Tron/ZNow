@@ -24,7 +24,9 @@
 
     // Vérifier si l'ID entré est le même que la session si il y en a une
     if(isset($_SESSION['loggedin']) AND $_SESSION['loggedin'] == true AND $_GET['id'] == $_SESSION['id']) {
-        echo "<a href=\"edit/index.php?id=$profileRequested\">Modifier le profil</a>";
+        echo "<a href=\"edit/index.php?id=$profileRequested\">Modifier le profil</a><br>";
+        echo "<a href=\"edit/role.php?id=$profileRequested\">Devenir vendeur</a>";
+        if(isset($_GET['message'])) { echo htmlspecialchars($_GET['message']); }
     }
 
 ?>
