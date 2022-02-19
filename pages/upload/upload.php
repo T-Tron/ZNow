@@ -10,7 +10,7 @@
     if(isset($_POST['gameName'], $_POST['gameDescription'], $_FILES['image'])) {
 
         $countfiles = count($_FILES['image']['name']);
-        if($countfiles >= 2) {
+        if($countfiles >= 6) {
             for($i=0;$i<$countfiles;$i++){
 
                 $errors = array();
